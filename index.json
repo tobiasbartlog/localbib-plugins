@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-29T08:23:33Z",
+  "updated": "2026-09-29T08:32:50Z",
   "addons": [
     {
       "id": "atlas",
@@ -22,7 +22,32 @@
       "screenshots": [
         "assets/atlas/screenshot-1.png"
       ],
-      "versions": []
+      "versions": [
+        {
+          "version": "0.3.0",
+          "api_version": 2,
+          "min_core": "0.8.0",
+          "released": "2026-09-29",
+          "changelog": "",
+          "requires_source": false,
+          "permissions": [
+            "library.read",
+            "llm",
+            "settings.core",
+            "network",
+            "files",
+            "storage"
+          ],
+          "artifacts": [
+            {
+              "python": "any",
+              "url": "https://github.com/tobiasbartlog/localbib-atlas/releases/download/v0.3.0/atlas-0.3.0.zip",
+              "size": 207577,
+              "sha256": "364b11272e2965e6ab86d9415b8306a432ddf079f02ffad7bb82df0ae2f449b0"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "hipster",
