@@ -1,0 +1,77 @@
+{
+  "updated": "2026-09-29T08:23:33Z",
+  "addons": [
+    {
+      "id": "atlas",
+      "name": "Atlas",
+      "tagline": "Ideen, Veröffentlichungen, Projekte, Dissertation und Werkbank.",
+      "description": "Atlas verwaltet Ideen, Veröffentlichungen, Forschungsprojekte, die Kapitel einer Dissertation und die Werkbank (Journal, Aufgaben, Zettel) als Markdown-Dateien in einem eigenen Ordner. Die Dateien sind die Quelle der Wahrheit; `atlas.db` ist ein abgeleiteter Index.",
+      "author": "LocalBib",
+      "license": "AGPL-3.0-only",
+      "homepage": "https://github.com/tobiasbartlog/localbib-atlas",
+      "trust": "official",
+      "languages": [
+        "de"
+      ],
+      "tags": [
+        "research",
+        "writing",
+        "projects"
+      ],
+      "icon": "assets/atlas/icon.png",
+      "screenshots": [
+        "assets/atlas/screenshot-1.png"
+      ],
+      "versions": []
+    },
+    {
+      "id": "hipster",
+      "name": "Hipster",
+      "tagline": "Trendanalyse der wichtigsten Journals des Felds.",
+      "description": "Hipster erntet die wichtigsten Journals des Felds über OpenAlex, clustert die Themen zu einem Themenbaum, berechnet Wachstumsraten und schreibt einen Report mit dem Transfer auf den eigenen Forschungskontext. Die Daten liegen in einer eigenen SQLite-Datenbank im Hipster-Ordner; Einträge übernimmt man per Klick in die Bibliothek.\n\nFür das Clustern braucht Hipster einen Embedding-Endpunkt (Einstellungen → LLM). Das Add-on bringt seinen numerischen Stack (numpy, scipy, scikit-learn, UMAP) selbst mit; der Download ist deshalb rund 105 MB groß (installiert rund 300 MB) und läuft nur in der Windows-Version von LocalBib.",
+      "author": "LocalBib",
+      "license": "AGPL-3.0-only",
+      "homepage": "https://github.com/tobiasbartlog/localbib-hipster",
+      "trust": "official",
+      "languages": [
+        "de"
+      ],
+      "tags": [
+        "research",
+        "trends",
+        "analysis"
+      ],
+      "icon": "assets/hipster/icon.png",
+      "screenshots": [
+        "assets/hipster/screenshot-1.png"
+      ],
+      "versions": [
+        {
+          "version": "0.2.0",
+          "api_version": 2,
+          "min_core": "0.8.0",
+          "released": "2026-09-29",
+          "changelog": "",
+          "requires_source": false,
+          "permissions": [
+            "library.read",
+            "library.write",
+            "llm",
+            "settings.core",
+            "network",
+            "files",
+            "storage"
+          ],
+          "artifacts": [
+            {
+              "python": "cp313-win_amd64",
+              "url": "https://github.com/tobiasbartlog/localbib-hipster/releases/download/v0.2.0/hipster-0.2.0.zip",
+              "size": 109486465,
+              "sha256": "56e9d763d029567db8068490cbef833c193c601ab83416c7ff3edffbf3bab6d2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

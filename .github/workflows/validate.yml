@@ -1,0 +1,27 @@
+# CI of the LocalBib Marketplace-Index (#197, ADR-0021).
+#
+# This repository is exported from the LocalBib development repo; the file
+# and checks/marketplace_index.py are added by the export. Runs on every
+# pull request that touches index.json: schema, reachable artifact URL and
+# source repository, checksum against the release asset, the Manifest inside
+# the Zip against the index entry, and `localbib-addon check` on the
+# unpacked Bundle.
+name: Validate submission
+
+on:
+  pull_request:
+    paths:
+      - "index.json"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install the Add-on Contract
+        run: python -m pip install "localbib-plugin-api[dev]>=2,<3"
+      - name: Validate the submission
+        run: python checks/validate_submission.py index.json
