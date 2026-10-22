@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-11T21:13:05Z",
+  "updated": "2026-10-22T20:15:51Z",
   "addons": [
     {
       "id": "atlas",
@@ -23,6 +23,30 @@
         "assets/atlas/screenshot-1.png"
       ],
       "versions": [
+        {
+          "version": "0.8.0",
+          "api_version": 2,
+          "min_core": "0.8.0",
+          "released": "2026-10-22",
+          "changelog": "",
+          "requires_source": false,
+          "permissions": [
+            "library.read",
+            "llm",
+            "settings.core",
+            "network",
+            "files",
+            "storage"
+          ],
+          "artifacts": [
+            {
+              "python": "any",
+              "url": "https://github.com/tobiasbartlog/localbib-atlas/releases/download/v0.8.0/atlas-0.8.0.zip",
+              "size": 331297,
+              "sha256": "11cc8ba265cab5ee43b1a5ffc6e61cd92ea06b7c1dd8e6831598eed4195a74d3"
+            }
+          ]
+        },
         {
           "version": "0.5.3",
           "api_version": 2,
@@ -117,6 +141,51 @@
               "url": "https://github.com/tobiasbartlog/localbib-hipster/releases/download/v0.2.0/hipster-0.2.0.zip",
               "size": 109486465,
               "sha256": "56e9d763d029567db8068490cbef833c193c601ab83416c7ff3edffbf3bab6d2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lacite",
+      "name": "LaCite",
+      "tagline": "Deine Bibliothek in deinem LaTeX-Editor: .bib-Datei und KI-Zitate mit Seite.",
+      "description": "LaCite legt eine .bib-Datei in den Ordner deines LaTeX-Projekts und hält sie aktuell, sobald sich deine Bibliothek ändert – für VS Code + LaTeX Workshop, TeXstudio, LMMs-Lab Writer und jeden Editor, der .bib-Dateien liest. Dazu kommt ein MCP-Endpunkt: KI-Assistenten wie Claude Code oder OpenCode durchsuchen deine Bibliothek, lesen Textstellen mit Seitenzahl und zitieren mit \\cite[S.~347]{key}. LaCite schreibt nur die eine Datei je Verbindung und löscht nie etwas.",
+      "author": "LocalBib",
+      "license": "AGPL-3.0-only",
+      "homepage": "https://github.com/tobiasbartlog/localbib-lacite",
+      "trust": "official",
+      "languages": [
+        "de"
+      ],
+      "tags": [
+        "latex",
+        "bibtex",
+        "citations",
+        "mcp"
+      ],
+      "icon": "assets/lacite/icon.png",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "api_version": 2,
+          "min_core": "0.8.0",
+          "released": "2026-10-22",
+          "changelog": "",
+          "requires_source": false,
+          "permissions": [
+            "library.read",
+            "library.write",
+            "settings.core",
+            "files"
+          ],
+          "artifacts": [
+            {
+              "python": "any",
+              "url": "https://github.com/tobiasbartlog/localbib-lacite/releases/download/v0.1.0/lacite-0.1.0.zip",
+              "size": 53451,
+              "sha256": "14972ef79eb14dff5670de3900c9def18a22bcc01b41b1c0b3be6f5fa553543e"
             }
           ]
         }
