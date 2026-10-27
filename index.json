@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26T16:53:38Z",
+  "updated": "2026-10-27T12:38:17Z",
   "addons": [
     {
       "id": "atlas",
@@ -167,6 +167,29 @@
       "icon": "assets/lacite/icon.png",
       "screenshots": [],
       "versions": [
+        {
+          "version": "0.3.0",
+          "api_version": 2,
+          "min_core": "0.8.0",
+          "released": "2026-10-27",
+          "changelog": "",
+          "requires_source": false,
+          "permissions": [
+            "library.read",
+            "library.write",
+            "settings.core",
+            "files",
+            "storage"
+          ],
+          "artifacts": [
+            {
+              "python": "any",
+              "url": "https://github.com/tobiasbartlog/localbib-lacite/releases/download/v0.3.0/lacite-0.3.0.zip",
+              "size": 90003,
+              "sha256": "1d0682885fa129cb03abbe86bce5cb858ac7b53217b46aded33360a4bf534c72"
+            }
+          ]
+        },
         {
           "version": "0.2.0",
           "api_version": 2,
